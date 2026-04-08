@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@controller/*": [
+        "./src/controller/*"
+      ],
+      "@model/*": [
+        "./src/model/*"
+      ],
+      "@middleware/*": [
+        "./src/middleware/*"
+      ],
+      "@socket/*": [
+        "./src/socket/*"
+      ]
+    },
+  }
+}
