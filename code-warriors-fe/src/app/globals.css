@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@theme {
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.theme {
+    transition: 1s all ease;
+}
+
+.light {
+    background-color: white;
+    color: #111;
+}
+
+.dark {
+    background-color: #111;
+    color: #bbb;
+}
